@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/runImageLayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#EFEFEF"
+    android:orientation="vertical" >
+
+    <FrameLayout
+        android:id="@+id/runImgBlock"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="3dp" >
+
+        <com.newgen.UI.RunImageViewPager
+            android:id="@+id/image_wall_gallery"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fadingEdge="none"
+            android:minHeight="200dp"
+            android:spacing="3dip"
+            android:unselectedAlpha="1" />
+
+        <TextView
+            android:id="@+id/txt_gallerytitle"
+            android:layout_width="fill_parent"
+            android:layout_height="25dp"
+            android:layout_gravity="bottom"
+            android:alpha="50"
+            android:background="#55000000"
+            android:gravity="left|center_vertical"
+            android:textColor="#ffffff"
+            >
+        </TextView>
+
+        <LinearLayout
+            android:id="@+id/gallery_point_linear"
+            android:layout_width="fill_parent"
+            android:layout_height="25dp"
+            android:layout_gravity="bottom"
+            android:gravity="right|center_vertical"
+            android:orientation="horizontal" 
+            
+            >
+        </LinearLayout>
+        
+    </FrameLayout>
+
+</LinearLayout>
